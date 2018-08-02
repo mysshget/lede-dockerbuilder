@@ -1,10 +1,12 @@
-sudo: true
+sudo: required
+dist: trusty
 language: bash
+
+services:
+  - docker
 
 addons:
   apt:
-    sources:
-      - debian-sid
     packages:
       - shellcheck
 
