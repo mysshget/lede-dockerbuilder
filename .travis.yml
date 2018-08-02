@@ -1,0 +1,19 @@
+---
+sudo: true
+language: bash
+
+addons:
+  apt:
+    sources:
+      - debian-sid
+    packages:
+      - shellcheck
+
+jobs:
+  include:
+    - stage: check script
+      script:
+        - shellcheck builder.sh
+    - stage: check examples
+      script:
+        - for f in *.conf; do ./builder.sh build $f; done
