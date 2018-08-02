@@ -1,5 +1,7 @@
 # Dockerized OpenWRT image builder
 
+[![Build Status](https://travis-ci.org/jandelgado/lede-dockerbuilder.svg?branch=master)](https://travis-ci.org/jandelgado/lede-dockerbuilder)
+
 <!-- vim-markdown-toc GFM -->
 
 * [What](#what)
@@ -22,7 +24,8 @@
 Easily and quickly build OpenWRT custom images using a self-contained
 docker container and the
 [OpenWrt](https://wiki.openwrt.org/doc/howto/obtain.firmware.generate) image
-builder. On the builder host, Docker is the only requirement.
+builder. On the builder host, Docker is the only requirement. Supports latest
+OpenWRT release (18.06).
 
 ### Note
 
