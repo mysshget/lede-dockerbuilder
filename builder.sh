@@ -104,7 +104,7 @@ mkdir -p "$OUTPUT_DIR"
 [ ! -d "$ROOTFS_OVERLAY" ] && fail "rootfs-overlay: no such directory $ROOTFS_OVERLAY"
 
 # set default LEDE_BUILDER_URL if not overriden in configuration file
-if [ -z ${LEDE_BUILDER_URL+x} ]; then
+if [ -z "${LEDE_BUILDER_URL+x}" ]; then
     LEDE_BUILDER_URL="https://downloads.openwrt.org/releases/$LEDE_RELEASE/targets/$LEDE_TARGET/$LEDE_SUBTARGET/openwrt-imagebuilder-$LEDE_RELEASE-$LEDE_TARGET-$LEDE_SUBTARGET.Linux-x86_64.tar.xz" 
 fi
 
